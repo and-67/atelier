@@ -1,0 +1,9 @@
+.intro-screen {
+    display: none;
+}
+
+.site-name {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 600;
+    letter-spacing: .08em;
+}
