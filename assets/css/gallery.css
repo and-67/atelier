@@ -28,3 +28,8 @@
 .green {
     background: var(--green);
 }
+
+
+.hidden {
+    display: none;
+}
