@@ -1,35 +1,112 @@
-.canvas {
-    min-height: 300vh;
-    display:flex;
-    justify-content: center;
-    gap: 3rem;
-    padding-top: 10rem;
-    padding-inline: 4rem;
-}
-
-.strip {
-    width: 180px;
-    border-radius: 24px;
-    min-height: 280vh;
-}
-
-.blue {
-    background: var(--blue);
-}
-
-.yellow {
-    background: var(--yellow);
-}
-
-.red {
-    background: var(--red);
-}
-
-.green {
-    background: var(--green);
-}
-
-
 .hidden {
     display: none;
+}
+
+#gallery {
+    min-height: 100vh;
+    padding: 100px 8vw;
+    background: #eeeae3;
+}
+
+#gallery h2 {
+    margin-bottom: 100px;
+}
+
+.gallery-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
+}
+
+.artwork {
+    width: 100%;
+    display: flex;
+}
+
+.artwork-1 {
+    justify-content: flex-start;
+    padding-left: 5%;
+}
+
+.artwork-2 {
+    justify-content: flex-end;
+    padding-right: 8%;
+}
+
+.artwork-3 {
+    justify-content: center;
+    padding-left: 12%;
+}
+
+.artwork-4 {
+    justify-content: flex-start;
+    padding-left: 18%;
+}
+
+.artwork-5 {
+    justify-content: flex-end;
+    padding-right: 18%;
+}
+
+.artwork-6 {
+    justify-content: center;
+    padding-right: 12%;
+}
+
+.frame {
+    width: 450px;
+    height: 550px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #222;
+
+    background: #f8f7f4;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.artwork-1 .frame {
+    width: 420px;
+    height: 520px;
+}
+
+.artwork-2 .frame {
+    width: 560px;
+    height: 380px;
+}
+
+.artwork-3 .frame {
+    width: 460px;
+    height: 600px;
+}
+
+.artwork-4 .frame {
+    width: 500px;
+    height: 500px;
+}
+
+.artwork-5 .frame {
+    width: 580px;
+    height: 400px;
+}
+
+.artwork-6 .frame {
+    width: 400px;
+    height: 560px;
+}
+
+.hanging {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wire {
+    width: 2px;
+    height: 60px;
+
+    background: #222;
 }
