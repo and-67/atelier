@@ -16,17 +16,21 @@
 
     padding: 18px;
 
-    border: 12px solid #222;
+    border: 2px solid #222;
     background: #f8f7f4;
 
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.06);
 
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .art-canvas {
     width: 100%;
     height: 100%;
+
+    overflow: hidden;
 
     display: flex;
     align-items: center;
@@ -50,4 +54,13 @@
     margin-top: 5px;
     font-size: 0.9rem;
     opacity: 0.6;
+}
+
+.art-canvas img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
 }

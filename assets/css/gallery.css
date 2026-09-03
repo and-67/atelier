@@ -5,7 +5,13 @@
 #gallery {
     min-height: 100vh;
     padding: 100px 8vw;
-    background: #eeeae3;
+    background: repeating-linear-gradient(
+        90deg,
+        #EBC3C7,       
+        #EBC3C7 20px,  
+        #8E6C68 20px,  
+        #8E6C68 40px   
+      );
 }
 
 #gallery h2 {
