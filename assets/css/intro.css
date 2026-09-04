@@ -1,31 +1,127 @@
 #intro {
-    width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    min-height: 100svh;
 
     display: flex;
     flex-direction: column;
-
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
+    padding: 60px 30px;
+
+    background: #f8f7f4;
 
     text-align: center;
 
     cursor: pointer;
 
-    padding: 2rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .intro-title {
-    font-size: clamp(2.5rem, 6vw, 5rem);
-    font-weight: normal;
-    line-height: 1.2;
     max-width: 900px;
+
+    margin: 0;
+
+    font-family: "Runethia", serif;
+
+    font-size: clamp(3.5rem, 7vw, 7rem);
+
+    font-weight: 400;
+
+    line-height: 0.95;
+
+    letter-spacing: -0.02em;
+
+    color: #222;
+
+    animation: introTitle 1.2s ease forwards;
 }
 
 .intro-subtitle {
-    margin-top: 2rem;
-    font-size: 1rem;
-    opacity: .6;
-    letter-spacing: .15rem;
+    margin-top: 45px;
+
+    font-family: Georgia, serif;
+
+    font-size: 0.85rem;
+
+    letter-spacing: 0.18em;
+
     text-transform: uppercase;
+
+    color: #6f6561;
+
+    animation: introSubtitle 1.2s ease 0.25s forwards;
+
+    opacity: 0;
+}
+
+#intro::after {
+    content: "";
+
+    width: 45px;
+    height: 1px;
+
+    background: #6f6561;
+
+    position: absolute;
+
+    bottom: 55px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+@keyframes introTitle {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes introSubtitle {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    #intro {
+        padding: 40px 20px;
+    }
+
+    .intro-title {
+        font-size: clamp(3rem, 15vw, 5rem);
+        line-height: 0.95;
+    }
+
+    .intro-subtitle {
+        margin-top: 35px;
+
+        font-size: 0.72rem;
+
+        letter-spacing: 0.13em;
+    }
+
+    #intro::after {
+        bottom: 35px;
+    }
+
 }

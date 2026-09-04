@@ -10,3 +10,10 @@ function enterGallery() {
     gallery.classList.remove("hidden");
 
 }
+
+const scrollText = document.querySelector('.intro-subtitle');
+
+document.addEventListener('click', function() {
+    
+    scrollText.innerText = 'Scroll down';
+});

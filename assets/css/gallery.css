@@ -14,8 +14,38 @@
       );
 }
 
+@font-face {
+    font-family: 'Runethia';
+    src: url(/assets/fonts/Runethia.otf);
+}
+
 #gallery h2 {
     margin-bottom: 100px;
+
+    font-family: 'Runethia' , sans-serif;
+
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    font-weight: 500;
+
+    letter-spacing: 0.0001em;
+
+    color: #222;
+
+    position: relative;
+    display: inline-block;
+}
+
+#gallery h2::after {
+    content: "";
+
+    display: block;
+
+    width: 45px;
+    height: 2px;
+
+    background: #222;
+
+    margin-top: 12px;
 }
 
 .gallery-layout {
