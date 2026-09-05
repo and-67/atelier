@@ -1,0 +1,82 @@
+#about {
+    min-height: 100vh;
+    padding: 140px 8vw;
+
+    background: #f8f7f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-inner {
+    width: 100%;
+    max-width: 850px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about h2 {
+    margin: 0;
+
+    font-family: "Runethia";
+    font-size: clamp(4rem, 8vw, 7rem);
+    font-weight: 400;
+    line-height: 0.95;
+
+    color: #222;
+}
+
+.about-divider {
+    width: 70px;
+    height: 1px;
+
+    margin: 55px 0 45px;
+
+    background: #6f6561;
+}
+
+.artist-name h3 {
+    margin: 0;
+
+    font-family: Georgia, serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 400;
+
+    color: #222;
+}
+
+.artist-links {
+    display: flex;
+    gap: 30px;
+
+    margin-top: 22px;
+}
+
+.artist-links a {
+    font-family: Georgia, serif;
+    font-size: 0.9rem;
+
+    color: #6f6561;
+    text-decoration: none;
+
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.artist-links a:hover {
+    color: #222;
+    transform: translateY(-4px);
+}
+
+.artist-intro {
+    max-width: 600px;
+    margin-top: 65px;
+
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.8;
+
+    color: #4a4644;
+}
