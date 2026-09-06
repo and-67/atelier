@@ -1,0 +1,200 @@
+/* FOR TABLET */
+@media (max-width: 900px) {
+
+    #gallery {
+        padding: 90px 6vw;
+    }
+
+    #gallery h2 {
+        margin-bottom: 80px;
+    }
+
+    .gallery-layout {
+        gap: 160px;
+    }
+
+    .artwork-1 {
+        padding-left: 0;
+    }
+
+    .artwork-2 {
+        padding-right: 0;
+    }
+
+    .artwork-3 {
+        padding-left: 5%;
+    }
+
+    .artwork-4 {
+        padding-left: 8%;
+    }
+
+    .artwork-5 {
+        padding-right: 8%;
+    }
+
+    .artwork-6 {
+        padding-right: 5%;
+    }
+
+    .artwork-1 .frame {
+        width: 360px;
+        height: 450px;
+    }
+
+    .artwork-2 .frame {
+        width: 470px;
+        height: 320px;
+    }
+
+    .artwork-3 .frame {
+        width: 390px;
+        height: 510px;
+    }
+
+    .artwork-4 .frame {
+        width: 420px;
+        height: 420px;
+    }
+
+    .artwork-5 .frame {
+        width: 490px;
+        height: 340px;
+    }
+
+    .artwork-6 .frame {
+        width: 350px;
+        height: 490px;
+    }
+}
+
+/* FOR MOBILE */
+@media (max-width: 600px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    #intro {
+        padding: 40px 20px;
+    }
+
+    .intro-title {
+        font-size: clamp(3rem, 15vw, 5rem);
+        line-height: 0.95;
+    }
+
+    .intro-subtitle {
+        margin-top: 35px;
+        font-size: 0.72rem;
+        letter-spacing: 0.13em;
+    }
+
+    #intro::after {
+        bottom: 35px;
+    }
+
+    #gallery {
+        padding: 80px 20px;
+    }
+
+    #gallery h2 {
+        margin-bottom: 70px;
+        font-size: clamp(3.5rem, 16vw, 5rem);
+    }
+
+    .gallery-layout {
+        gap: 110px;
+    }
+
+    .artwork {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: center;
+    }
+
+    .artwork-1 .frame {
+        width: min(100%, 360px);
+        height: 450px;
+    }
+
+    .artwork-2 .frame {
+        width: min(100%, 360px);
+        height: 245px;
+    }
+
+    .artwork-3 .frame {
+        width: min(100%, 350px);
+        height: 455px;
+    }
+
+    .artwork-4 .frame {
+        width: min(100%, 350px);
+        height: 350px;
+    }
+
+    .artwork-5 .frame {
+        width: min(100%, 360px);
+        height: 250px;
+    }
+
+    .artwork-6 .frame {
+        width: min(100%, 340px);
+        height: 475px;
+    }
+
+    .frame {
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    .wire {
+        height: 40px;
+    }
+
+    .art-info {
+        margin-top: 14px;
+    }
+
+    .art-info h3 {
+        font-size: 1rem;
+    }
+
+    .art-info p {
+        font-size: 0.82rem;
+    }
+
+    #about {
+        padding: 100px 25px;
+    }
+
+    #about h2 {
+        font-size: clamp(3.5rem, 16vw, 5rem);
+    }
+
+    .about-divider {
+        margin: 45px 0 35px;
+    }
+
+    .artist-name h3 {
+        font-size: clamp(1.8rem, 8vw, 2.6rem);
+    }
+
+    .artist-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .artist-links a {
+        font-size: 0.82rem;
+    }
+
+    .artist-intro {
+        margin-top: 50px;
+        font-size: 0.92rem;
+        line-height: 1.7;
+    }
+}
