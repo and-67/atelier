@@ -1,0 +1,107 @@
+#artwork-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(248, 247, 244, 0.97);
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px;
+
+    z-index: 1000;
+}
+
+.artwork-overlay-content {
+    width: 100%;
+    max-width: 1200px;
+
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+.overlay-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-height: 80vh;
+}
+
+.overlay-image img {
+    max-width: 100%;
+    max-height: 80vh;
+
+    object-fit: contain;
+
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.18);
+}
+
+.overlay-details h2 {
+    margin: 0 0 15px;
+
+    font-family: "Runethia", serif;
+
+    font-size: clamp(2.5rem, 5vw, 5rem);
+
+    font-weight: 400;
+
+    color: #222;
+}
+
+#overlay-meta {
+    margin-bottom: 35px;
+
+    font-size: 0.9rem;
+
+    color: #6f6561;
+}
+
+#overlay-medium {
+    margin-bottom: 25px;
+
+    font-weight: 500;
+}
+
+#overlay-description {
+    max-width: 420px;
+
+    line-height: 1.8;
+
+    color: #4a4644;
+}
+
+#close-artwork {
+    position: absolute;
+
+    top: 30px;
+    right: 40px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 2.5rem;
+
+    font-weight: 300;
+
+    cursor: pointer;
+
+    color: #222;
+
+    transition: transform 0.3s ease;
+}
+
+#close-artwork:hover {
+    transform: rotate(90deg);
+}
