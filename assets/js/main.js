@@ -50,8 +50,7 @@ artworks.forEach((artwork) => {
         overlayDescription.textContent =
             "A short description of the artwork will appear here.";
 
-        artworkOverlay.style.display = "flex";
-
+        artworkOverlay.classList.add("is-open");
         document.body.style.overflow = "hidden";
 
     });
@@ -60,8 +59,7 @@ artworks.forEach((artwork) => {
 
 closeArtwork.addEventListener("click", () => {
 
-    artworkOverlay.style.display = "none";
-
+    artworkOverlay.classList.remove("is-open");
     document.body.style.overflow = "";
 
 });
@@ -70,10 +68,16 @@ document.addEventListener("keydown", (event) => {
 
     if (event.key === "Escape") {
 
-        artworkOverlay.style.display = "none";
-
+        artworkOverlay.classList.remove("is-open");
         document.body.style.overflow = "";
 
     }
 
+});
+
+artworkOverlay.addEventListener("click", (event) => {
+    if (event.target === artworkOverlay) {
+        artworkOverlay.classList.remove("is-open");
+        document.body.style.overflow = "";
+    }
 });

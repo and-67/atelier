@@ -16,6 +16,8 @@
     padding: 60px;
 
     z-index: 1000;
+
+    opacity: 0;
 }
 
 .artwork-overlay-content {
@@ -104,4 +106,52 @@
 
 #close-artwork:hover {
     transform: rotate(90deg);
+}
+
+#artwork-overlay.is-open {
+    display: flex;
+    animation: overlayFadeIn 0.45s ease forwards;
+}
+
+#artwork-overlay.is-open .overlay-image img {
+    animation: artworkReveal 0.6s ease forwards;
+}
+
+#artwork-overlay.is-open .overlay-details {
+    animation: detailsReveal 0.6s ease 0.12s forwards;
+}
+
+@keyframes overlayFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes artworkReveal {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+@keyframes detailsReveal {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
