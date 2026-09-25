@@ -1,0 +1,38 @@
+.artwork {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.artwork.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#gallery h2 {
+    opacity: 0;
+    transform: translateX(-35px);
+    animation: galleryHeadingReveal 1s ease 0.2s forwards;
+}
+
+@keyframes galleryHeadingReveal {
+    from {
+        opacity: 0;
+        transform: translateX(-35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#about {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+#about.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

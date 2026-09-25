@@ -81,3 +81,45 @@ artworkOverlay.addEventListener("click", (event) => {
         document.body.style.overflow = "";
     }
 });
+
+
+//for artworks//
+const artworkElements = document.querySelectorAll(".artwork");
+const artworkObserver = new IntersectionObserver (
+    (entries) => {
+        entries.forEach((entry) => {
+            if(entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                artworkObserver.unobserver(entry.target);
+            }
+        });
+    },
+    {threshold: 0.15
+
+    }
+);
+
+artworkElements.forEach((artwork) => {
+    artworkObserver.observe(artwork);
+});
+
+
+
+//for about section//
+const aboutSection = document.getElementById("about");
+
+const aboutObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                aboutObserver.unobserve(entry.target);
+            }
+        });
+    },
+    {
+        threshold: 0.15
+    }
+);
+
+aboutObserver.observe(aboutSection);
